@@ -7,6 +7,7 @@ namespace Calculadora.OperacoesMatematicas
     {
         public static void Subtrair()
         {
+            // colocar esse switch dentro da classe especifica.
             try
             {
                 MenuQuantidade.ExibirMenuQuantidade();
