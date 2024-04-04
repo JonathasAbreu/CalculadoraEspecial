@@ -11,10 +11,7 @@ namespace Calculadora.OperacoesMatematicas
             try
             {
                 MenuQuantidade.ExibirMenuQuantidade();
-
-                int quantidadeDivisao = int.Parse(Console.ReadLine());
-                Console.Clear();
-
+                
                 Switch.SwitchDivisao();                
             }
             catch (FormatException)
