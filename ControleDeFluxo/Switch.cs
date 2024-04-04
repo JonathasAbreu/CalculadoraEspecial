@@ -30,6 +30,8 @@ namespace Calculadora.ControleDeFluxo
 
         public static void SwitchDivisao()
         {
+            MenuQuantidade.ExibirMenuQuantidade();
+            
             int quantidadeDivisao = int.Parse(Console.ReadLine());
                 Console.Clear();
             
@@ -58,6 +60,40 @@ namespace Calculadora.ControleDeFluxo
                             Console.WriteLine("Opção inválida, escolha uma opção disponivel.\n");
                         Thread.Sleep(2000);
                         Dividir();
+                        break;
+                }
+        }
+
+        public static void SwitchMultiplicacao()
+        {
+            int quantidadeMultiplicacao = int.Parse(Console.ReadLine());
+                Console.Clear();
+
+                switch (quantidadeMultiplicacao)
+                {
+                    case 1:
+                        QuantidadeMultiplicacao.DoisNumeros();
+                        break;
+                    case 2:
+                        QuantidadeMultiplicacao.TresNumeros();
+                        break;
+                    case 3:
+                        QuantidadeMultiplicacao.QuatroNumeros();
+                        break;
+                    case 4:
+                        QuantidadeMultiplicacao.CincoNumeros();
+                        break;
+                    default:
+                        if (quantidadeMultiplicacao == 0)
+                        {
+                            Console.WriteLine("Voltando ao menu anterior.");
+                            Thread.Sleep(3000);
+                            QuantidadeMultiplicacao.Sair();
+                        }
+                        else
+                            Console.WriteLine("Opção inválida, escolha uma opção disponivel.\n");
+                        Thread.Sleep(2000);
+                        Multiplicar();
                         break;
                 }
         }
