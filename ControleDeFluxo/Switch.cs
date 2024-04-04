@@ -30,11 +30,6 @@ namespace Calculadora.ControleDeFluxo
 
         public static void SwitchDivisao()
         {
-                MenuQuantidade.ExibirMenuQuantidade();
-
-                int quantidadeDivisao = int.Parse(Console.ReadLine());
-                Console.Clear();
-
                 switch (quantidadeDivisao)
                 {
                     case 1:
