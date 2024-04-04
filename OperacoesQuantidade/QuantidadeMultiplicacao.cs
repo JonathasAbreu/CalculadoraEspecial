@@ -21,7 +21,7 @@ namespace Calculadora.OperacoesMatematicas.OperacoesQuantidade
 
                 Console.Clear();
 
-                Switch.EscolhaFinal();
+                Switch.SwitchFinal();
             }
             catch (FormatException)
             {
@@ -50,7 +50,7 @@ namespace Calculadora.OperacoesMatematicas.OperacoesQuantidade
 
                 Console.Clear();
 
-                Switch.EscolhaFinal();
+                Switch.SwitchFinal();
             }
             catch (FormatException)
             {
@@ -82,7 +82,7 @@ namespace Calculadora.OperacoesMatematicas.OperacoesQuantidade
 
                 Console.Clear();
 
-                Switch.EscolhaFinal();
+                Switch.SwitchFinal();
             }
             catch (FormatException)
             {
@@ -117,7 +117,7 @@ namespace Calculadora.OperacoesMatematicas.OperacoesQuantidade
 
                 Console.Clear();
 
-                Switch.EscolhaFinal();
+                Switch.SwitchFinal();
             }
             catch (FormatException)
             {
