@@ -10,8 +10,7 @@ namespace Calculadora.OperacoesMatematicas
         {
             try
             {
-                Switch.SwitchMultiplicacao();
-                }
+                Switch.SwitchMultiplicacao();                
             }
             catch (FormatException)
             {
