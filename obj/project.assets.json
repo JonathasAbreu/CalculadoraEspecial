@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jonathasabreu/Calculadora/Calculadora.csproj",
+      "projectUniqueName": "/Users/jonathasabreu/Desktop/Projetos/CalculadoraEspecial/Calculadora.csproj",
       "projectName": "Calculadora",
-      "projectPath": "/Users/jonathasabreu/Calculadora/Calculadora.csproj",
+      "projectPath": "/Users/jonathasabreu/Desktop/Projetos/CalculadoraEspecial/Calculadora.csproj",
       "packagesPath": "/Users/jonathasabreu/.nuget/packages/",
-      "outputPath": "/Users/jonathasabreu/Calculadora/obj/",
+      "outputPath": "/Users/jonathasabreu/Desktop/Projetos/CalculadoraEspecial/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/jonathasabreu/.nuget/NuGet/NuGet.Config"

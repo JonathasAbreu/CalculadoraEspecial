@@ -1,5 +1,6 @@
 using Calculadora.Menus;
 using Calculadora.ControleDeFluxo;
+using CalculadoraEspecial.TratamentoDeExcecoes;
 
 namespace Calculadora.OperacoesMatematicas.OperacoesQuantidade
 {
