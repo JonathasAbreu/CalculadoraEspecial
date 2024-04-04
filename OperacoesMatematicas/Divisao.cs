@@ -9,9 +9,7 @@ namespace Calculadora.OperacoesMatematicas
         public static void Dividir()
         {
             try
-            {
-                MenuQuantidade.ExibirMenuQuantidade();
-                
+            {   
                 Switch.SwitchDivisao();                
             }
             catch (FormatException)
