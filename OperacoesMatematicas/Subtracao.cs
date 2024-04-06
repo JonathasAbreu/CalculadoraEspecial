@@ -1,6 +1,7 @@
 using Calculadora.Menus;
 using Calculadora.OperacoesMatematicas.OperacoesQuantidade;
 using Calculadora.ControleDeFluxo;
+using CalculadoraEspecial.ControlesDeFluxo;
 
 namespace Calculadora.OperacoesMatematicas
 {
@@ -11,7 +12,7 @@ namespace Calculadora.OperacoesMatematicas
             // colocar esse switch dentro da classe especifica.
             try
             {
-                Switch.SwitchSubtracao();
+                SwitchSubtracao.Subtracao();
             }
             catch (FormatException)
             {

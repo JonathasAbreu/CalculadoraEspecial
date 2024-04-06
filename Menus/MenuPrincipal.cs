@@ -9,13 +9,13 @@ namespace Calculadora.Menus
             try
             {
                 Console.Clear();
-                Console.WriteLine("----- Escolha o cálculo que deseja fazer ----- \n");
+                Console.WriteLine("----- Escolha o que deseja fazer ----- \n");
                 Console.WriteLine("1 - SOMA");
                 Console.WriteLine("2 - SUBTRAÇÃO");
                 Console.WriteLine("3 - MULTIPLICAÇÃO");
                 Console.WriteLine("4 - DIVISÃO");
                 Console.WriteLine("0 - SAIR DO PROGRAMA");
-                Console.WriteLine("\nOpcao: ");
+                Console.WriteLine("\nOpção: ");
 
                 int OperacaoEscolhida = int.Parse(Console.ReadLine());
 
@@ -43,7 +43,7 @@ namespace Calculadora.Menus
                         }
                         else
                             Console.Clear();
-                        Console.WriteLine("\nOpção inválida, escolha uma opção disponivel.\n");
+                        Console.WriteLine("Opção inválida, escolha uma opção disponivel.\n");
                         Thread.Sleep(2000);
                         MenuInicial();
                         break;

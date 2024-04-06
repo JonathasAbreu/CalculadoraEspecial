@@ -1,4 +1,5 @@
 using Calculadora.ControleDeFluxo;
+using CalculadoraEspecial.ControlesDeFluxo;
 
 namespace Calculadora.OperacoesMatematicas
 {
@@ -8,7 +9,7 @@ namespace Calculadora.OperacoesMatematicas
         {
             try
             {
-                Switch.SwitchSoma();
+                SwitchSoma.Soma();
             }
             catch (FormatException)
             {

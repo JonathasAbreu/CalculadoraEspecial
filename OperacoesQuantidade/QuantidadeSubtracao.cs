@@ -5,29 +5,46 @@ namespace Calculadora.OperacoesMatematicas.OperacoesQuantidade
 {
     public class QuantidadeSubtracao
     {
+        public static decimal LerValorDecimal()
+        {
+            Console.WriteLine("Digite o valor: ");
+            return decimal.Parse(Console.ReadLine());
+        }
+
+        public static decimal SubtrairSequencial(params decimal[] valores)
+        {
+            decimal resultado = valores[0];
+            for (int i = 1; i < valores.Length; i++)
+            {
+                resultado -= valores[i];
+            }
+            return resultado;
+        }
+
         public static void DoisNumeros()
         {
             try
             {
-                Console.WriteLine("Primeiro valor:");
-                decimal valor1 = decimal.Parse(Console.ReadLine());
+                decimal valor1 = LerValorDecimal();
                 Console.Clear();
-                Console.WriteLine("Segundo valor: ");
-                decimal valor2 = decimal.Parse(Console.ReadLine());
-                decimal subtracao = valor1 - valor2;
+                decimal valor2 = LerValorDecimal();
+
+                decimal divisao = SubtrairSequencial(valor1, valor2);
+
                 Console.Clear();
-                Console.WriteLine($"O resultado da sua subtração foi: {subtracao:F1}\n");
-                Thread.Sleep(2000);
+                Console.WriteLine($"O resultado da sua subtração foi: {divisao:F2}\n");
+                Console.WriteLine("Aperte qualquer tecla para avançar.");
+                Console.ReadLine();
 
                 Console.Clear();
 
-                Switch.SwitchFinal();
+                SwitchEncerramento.Final();
             }
             catch (FormatException)
             {
-                Console.WriteLine("\nDigite apenas valores numéricos. Vontando ao menu anterior.");
+                Console.WriteLine("\nDigite apenas valores numéricos. Voltando ao menu anterior.");
                 Thread.Sleep(2000);
-                Subtracao.Subtrair();
+                Divisao.Dividir();
             }
         }
 
@@ -35,28 +52,28 @@ namespace Calculadora.OperacoesMatematicas.OperacoesQuantidade
         {
             try
             {
-                Console.WriteLine("Primeiro valor:");
-                decimal valor1 = decimal.Parse(Console.ReadLine());
+                decimal valor1 = LerValorDecimal();
                 Console.Clear();
-                Console.WriteLine("Segundo valor: ");
-                decimal valor2 = decimal.Parse(Console.ReadLine());
+                decimal valor2 = LerValorDecimal();
                 Console.Clear();
-                Console.WriteLine("Terceiro valor: ");
-                decimal valor3 = decimal.Parse(Console.ReadLine());
-                decimal subtracao = valor1 - valor2 - valor3;
+                decimal valor3 = LerValorDecimal();
+
+                decimal divisao = SubtrairSequencial(valor1, valor2, valor3);
+
                 Console.Clear();
-                Console.WriteLine($"O resultado da sua subtração foi: {subtracao:F1}\n");
-                Thread.Sleep(2000);
+                Console.WriteLine($"O resultado da sua subtração foi: {divisao:F2}\n");
+                Console.WriteLine("Aperte qualquer tecla para avançar.");
+                Console.ReadLine();
 
                 Console.Clear();
 
-                Switch.SwitchFinal();
+                SwitchEncerramento.Final();
             }
             catch (FormatException)
             {
-                Console.WriteLine("\nDigite apenas valores numéricos. Vontando ao menu anterior.");
+                Console.WriteLine("\nDigite apenas valores numéricos. Voltando ao menu anterior.");
                 Thread.Sleep(2000);
-                Subtracao.Subtrair();
+                Divisao.Dividir();
             }
         }
 
@@ -64,31 +81,30 @@ namespace Calculadora.OperacoesMatematicas.OperacoesQuantidade
         {
             try
             {
-                Console.WriteLine("Primeiro valor:");
-                decimal valor1 = decimal.Parse(Console.ReadLine());
+                decimal valor1 = LerValorDecimal();
                 Console.Clear();
-                Console.WriteLine("Segundo valor: ");
-                decimal valor2 = decimal.Parse(Console.ReadLine());
+                decimal valor2 = LerValorDecimal();
                 Console.Clear();
-                Console.WriteLine("Terceiro valor: ");
-                decimal valor3 = decimal.Parse(Console.ReadLine());
+                decimal valor3 = LerValorDecimal();
                 Console.Clear();
-                Console.WriteLine("Quarto valor: ");
-                decimal valor4 = decimal.Parse(Console.ReadLine());
-                decimal subtracao = valor1 - valor2 - valor3 - valor4;
+                decimal valor4 = LerValorDecimal();
+
+                decimal divisao = SubtrairSequencial(valor1, valor2);
+
                 Console.Clear();
-                Console.WriteLine($"O resultado da sua subtração foi: {subtracao:F1}\n");
-                Thread.Sleep(2000);
+                Console.WriteLine($"O resultado da sua subtração foi: {divisao:F2}\n");
+                Console.WriteLine("Aperte qualquer tecla para avançar.");
+                Console.ReadLine();
 
                 Console.Clear();
 
-                Switch.SwitchFinal();
+                SwitchEncerramento.Final();
             }
             catch (FormatException)
             {
-                Console.WriteLine("\nDigite apenas valores numéricos. Vontando ao menu anterior.");
+                Console.WriteLine("\nDigite apenas valores numéricos. Voltando ao menu anterior.");
                 Thread.Sleep(2000);
-                Subtracao.Subtrair();
+                Divisao.Dividir();
             }
         }
 
@@ -96,39 +112,37 @@ namespace Calculadora.OperacoesMatematicas.OperacoesQuantidade
         {
             try
             {
-                Console.WriteLine("Primeiro valor:");
-                decimal valor1 = decimal.Parse(Console.ReadLine());
+                decimal valor1 = LerValorDecimal();
                 Console.Clear();
-                Console.WriteLine("Segundo valor: ");
-                decimal valor2 = decimal.Parse(Console.ReadLine());
+                decimal valor2 = LerValorDecimal();
                 Console.Clear();
-                Console.WriteLine("Terceiro valor: ");
-                decimal valor3 = decimal.Parse(Console.ReadLine());
+                decimal valor3 = LerValorDecimal();
                 Console.Clear();
-                Console.WriteLine("Quarto valor: ");
-                decimal valor4 = decimal.Parse(Console.ReadLine());
+                decimal valor4 = LerValorDecimal();
                 Console.Clear();
-                Console.WriteLine("Quinto valor: ");
-                decimal valor5 = decimal.Parse(Console.ReadLine());
-                decimal subtracao = valor1 - valor2 - valor3 - valor4 - valor5;
+                decimal valor5 = LerValorDecimal();
+
+                decimal divisao = SubtrairSequencial(valor1, valor2, valor3);
+
                 Console.Clear();
-                Console.WriteLine($"O resultado da sua subtração foi: {subtracao:F1}\n");
-                Thread.Sleep(2000);
+                Console.WriteLine($"O resultado da sua subtração foi: {divisao:F2}\n");
+                Console.WriteLine("Aperte qualquer tecla para avançar.");
+                Console.ReadLine();
 
                 Console.Clear();
 
-                Switch.SwitchFinal();
+                SwitchEncerramento.Final();
             }
             catch (FormatException)
             {
-                Console.WriteLine("\nDigite apenas valores numéricos. Vontando ao menu anterior.");
+                Console.WriteLine("\nDigite apenas valores numéricos. Voltando ao menu anterior.");
                 Thread.Sleep(2000);
-                Subtracao.Subtrair();
+                Divisao.Dividir();
             }
         }
 
-        public static void Sair()
-        {            
+        public static void VoltarMenuAnterior()
+        {
             MenuPrincipal.MenuInicial();
         }
     }
